@@ -1,4 +1,4 @@
-name: ci-pipeline
+name: ci-pipeline2
 
 on:
     push:
@@ -24,7 +24,7 @@ jobs:
 
             - name: Run Flask App
               run: |
-                python app.py
+                python app.py &
                 sleep 10
 
             - name: Validate Application
